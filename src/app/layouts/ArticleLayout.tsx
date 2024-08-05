@@ -6,6 +6,7 @@ import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export const metadata: Metadata = {
 	title: "Hoge Page",
@@ -23,21 +24,20 @@ function ArticleLayout({
 	title: string;
 	createdAt: string;
 }) {
+	const [url, setUrl] = useState("");
+	useEffect(() => {
+		const currentUrl = window.location.href;
+		setUrl(currentUrl);
+	}, []);
 	return (
 		<div className={`${className} max-w-md m-auto bg-blue-100/50 min-h-screen`}>
 			<head>
 				<meta name="viewport" content={"width=device-width, initial-scale=1"} />
 				<title>{title}</title>
-				<link
-					href={`https://onequestion.kobakoo.com/articles/${createdAt}`}
-					rel="canonical"
-				/>
+				<link href={url} rel="canonical" />
 				<meta name="twitter:card" content={"summary_large_image"} />
 				<meta property="og:title" content={title} />
-				<meta
-					property="og:url"
-					content={`https://onequestion.kobakoo.com/articles/${createdAt}`}
-				/>
+				<meta property="og:url" content={url} />
 				<meta name="description" content={"上位校への一問一答を掲載します。"} />
 				<meta
 					property="og:description"

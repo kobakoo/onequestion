@@ -13,6 +13,11 @@ import Link from "next/link";
 
 export default function Home() {
 	const [isClient, setIsClient] = useState(false);
+	const [url, setUrl] = useState("");
+	useEffect(() => {
+		const currentUrl = window.location.href;
+		setUrl(currentUrl);
+	}, []);
 	useEffect(() => {
 		setTimeout(() => {
 			setIsClient(true);
@@ -30,13 +35,10 @@ export default function Home() {
 							content={"width=device-width, initial-scale=1"}
 						/>
 						<title>{"上位校への一問一答"}</title>
-						<link href={"https://onequestion.kobakoo.com/"} rel="canonical" />
+						<link href={url} rel="canonical" />
 						<meta name="twitter:card" content={"summary_large_image"} />
 						<meta property="og:title" content={"上位校への一問一答"} />
-						<meta
-							property="og:url"
-							content={"https://onequestion.kobakoo.com/"}
-						/>
+						<meta property="og:url" content={url} />
 						<meta
 							name="description"
 							content={"上位校への一問一答を掲載します。"}
