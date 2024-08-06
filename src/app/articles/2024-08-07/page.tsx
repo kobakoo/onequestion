@@ -7,7 +7,7 @@ import { InlineMath, BlockMath } from "react-katex";
 function Page() {
 	return (
 		<>
-			<Template title="2021 慶應義塾高校> 1️⃣ >(2)" createdAt="2024-08-06">
+			<Template title="2021 慶應義塾高校> 1️⃣ >(2)" createdAt="2024-08-07">
 				<p>
 					今日は立秋。ここで一句（唐突）
 					<br />

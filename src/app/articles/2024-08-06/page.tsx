@@ -22,7 +22,7 @@ function Page() {
 
 	return (
 		<>
-			<Template title="2019 開成高校>社会>問15" createdAt="2024-08-05">
+			<Template title="2019 開成高校>社会>問15" createdAt="2024-08-06">
 				<p>今日は広島平和記念日。原爆投下から７９年です。</p>
 				<Heading>問15</Heading>
 				<div className="mx-5 mt-3">
