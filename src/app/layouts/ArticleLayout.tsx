@@ -8,11 +8,6 @@ import Link from "next/link";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
-export const metadata: Metadata = {
-	title: "Hoge Page",
-	description: "Hoge Pageです。",
-};
-
 function ArticleLayout({
 	children,
 	className,
@@ -83,6 +78,17 @@ function ArticleLayout({
 					<small className="font-sans text-sm text-blue-700">
 						©kobako 2024
 					</small>
+					<p>
+						過去問は
+						<Link
+							href="https://www.koenokyoikusha.co.jp/books/book_koukou"
+							className=" text-orange-400 hover:underline"
+							target="_blank"
+						>
+							声の教育者
+						</Link>
+						より引用
+					</p>
 				</div>
 			</footer>
 		</div>
