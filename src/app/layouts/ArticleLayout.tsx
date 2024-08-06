@@ -82,7 +82,7 @@ function ArticleLayout({
 						過去問は
 						<Link
 							href="https://www.koenokyoikusha.co.jp/books/book_koukou"
-							className=" text-orange-400 hover:underline"
+							className=" text-orange-400 hover:underline transition"
 							target="_blank"
 						>
 							声の教育者

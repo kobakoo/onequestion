@@ -24,7 +24,9 @@ function AnswerAndExplanation({
 		<>
 			<Heading>解答解説</Heading>
 			<div className="mx-4 my-4">
-				<Alert severity="error">一回考えてから以下の解答を見てください！</Alert>
+				<Alert severity="error">
+					一回考えて答えを書いてから以下の解答を見てください！
+				</Alert>
 			</div>
 			<div className="mx-4">
 				<Accordion
