@@ -2,7 +2,7 @@ import React from "react";
 import Template from "@/app/layouts/Template";
 import Katex from "@/app/components/Katex";
 import AnswerAndExplanation from "@/app/components/AnswerAndExplanation";
-import { InlineMath, BlockMath } from "react-katex";
+import { InlineMath } from "react-katex";
 
 function Page() {
 	return (
