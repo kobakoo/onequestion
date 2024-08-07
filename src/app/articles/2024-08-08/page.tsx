@@ -57,6 +57,17 @@ function ArticleTemplate() {
 	return (
 		<>
 			<Template title={data.title} createdAt={data.createdAt}>
+				<p className="mx-5 mb-5">
+					今日は世阿彌忌。1444年頃に世阿弥が亡くなった日とされています。ということで、世阿弥の言葉から一つ紹介します。「
+					<a
+						href="https://www.the-noh.com/jp/zeami/words.html#word01"
+						target="_blank"
+						className="underline"
+					>
+						初心忘るべからず
+					</a>
+					」
+				</p>
 				<p className="mx-5">＊(2)は1年の復習。(3)はテスト範囲</p>
 				<Image
 					src="/2024-08-08 問題.png"
