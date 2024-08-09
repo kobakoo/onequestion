@@ -38,16 +38,6 @@ const selections = [
 ];
 
 function ArticleTemplate() {
-	const [isClient, setIsClient] = useState(false);
-	useEffect(() => {
-		setIsClient(true);
-	}, []);
-	const [expanded, setExpanded] = useState<string | false>(false);
-
-	const handleChange =
-		(panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-			setExpanded(isExpanded ? panel : false);
-		};
 	return (
 		<>
 			<Template title={data.title} createdAt={data.createdAt}>
