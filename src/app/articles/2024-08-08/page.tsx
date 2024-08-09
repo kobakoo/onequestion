@@ -33,7 +33,7 @@ const data = {
 	explanation: `(3) 文章が長いだけで基本的な問題です。<br/>＊以下は解説丸写し()<p class=" mt-3">ア…正しい。図1で，花粉管の中を胚珠へ向かって移動するCは精細胞，胚珠の中にあるDは卵細胞を表している。精細胞と卵細胞はどちらも生殖細胞で、その染色体数は体細胞の染色体数の半分である。よって、イ，ウは誤り。<br/> エ…正しい。Eは体細胞だから、その染 色体数は生殖細胞であるDの2倍、つまり、Dの染色体数はEの半分である。<br/>オ…誤り。A の子房の壁を構成する細胞は体細胞であるから、染色体数はEと同じである。よって、力も誤り。<br/> キ…誤り。Cの細胞2つの染色体数の合計は体細胞の染色体数と同じであるから、Cの細胞2つに Dの細胞1つを加えた染色体数の合計は、Eよりも多くなる（1.5倍になる）。</p><p class="mt-3">よくわかんない場合は↓</p><iframe width="300" height="170" src="https://www.youtube-nocookie.com/embed/04lACMuFq6g?si=pDq06qouSq5uWJgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="w-full"></iframe>`,
 } as ArticleData;
 
-const selection = [
+const selections = [
 	"ア　1つのCの染色体数は、Dの染色体数と同じである。",
 	"イ　1つのCの染色体数は、Dの染色体数の半分である。",
 	"ウ　Cの染色体数は、Eの染色体数の4分の1である。",
@@ -91,7 +91,7 @@ function ArticleTemplate() {
 				<div className="mx-6">
 					{/*!問題内容*/}
 					<List dense={false}>
-						{selection.map((item, index) => (
+						{selections.map((item, index) => (
 							<ListItem key={index}>
 								<ListItemText primary={item} />
 							</ListItem>
