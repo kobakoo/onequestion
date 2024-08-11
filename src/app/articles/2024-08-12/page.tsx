@@ -74,6 +74,7 @@ function AnswerAndExplanation({
 
 import { InlineMath } from "react-katex";
 import Alert from "@mui/material/Alert";
+
 function Page() {
 	return (
 		<>
@@ -106,7 +107,7 @@ function Page() {
 					answer="-\frac{4}{11}"
 					explanation={`
             <p class="mb-2"><strong class="text-red-400 underline mr-2">ポイント！</strong>解と係数</p>
-          <img src="/2024-08-12 解説.png" alt="2024-08-12 解説.png" class="w-full" />
+          <img src="/2024-08-12 解説.jpeg" alt="2024-08-12 解説.jpeg" class="w-full" />
           `}
 				/>
 			</Template>
