@@ -36,7 +36,7 @@ function Page() {
 					の一の位の数に何か規則性はあるかな？
 				</p>
 				<AnswerAndExplanation
-					answer='<p class="font-mono">2</p>'
+					answer='<p class="font-mono">4</p>'
 					explanation={`
             <p class="mb-2"><strong class="text-red-400 underline mr-2">ポイント！</strong>計算できないような指数の場合は規則性を活用する！</p>
           <img src="/2024-08-11 解説.png" alt="2024-08-11 解説.png" class="w-full" />
