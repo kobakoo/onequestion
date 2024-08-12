@@ -78,36 +78,27 @@ import Alert from "@mui/material/Alert";
 function Page() {
 	return (
 		<>
-			<Template title="???? 早稲田大本庄高等学院" createdAt="2024-08-12">
+			<Template title="2016 早稲田実業高等部>数学>1️⃣>(1)" createdAt="2024-08-13">
 				<p className=" mt-3">
-					今日は1978年に日中平和友好条約が締結された日です。
+					今日は1965年に第58-60代内閣総理大臣の池田勇人氏が亡くなった日です。まだ授業ではやってませんが、第一回東京オリンピックを利用して国民所得倍増計画を実施し、高度経済成長期を築きました。
 				</p>
 				<div className=" mt-4">
 					<Alert severity="info">
-						今日のテーマは<b>二次方程式の利用</b>・<b>解と係数です。</b>
+						今日のテーマは<b>式の工夫</b>
 					</Alert>
 				</div>
-				<p className="mt-3 mb-10">＊一応試験範囲（暴論）</p>
 				<Katex
 					equation={`
-						(x-1)^2=12
-							`}
-				/>
-				<p>
-					の二つの解を<InlineMath>p,q</InlineMath>とするとき、
-				</p>
-				<Katex
-					equation={`
-						\\frac{(p+q)^2}{pq}
-							`}
-				/>
-				<p>の値を求めなさい。</p>
-
+            (\\sqrt{7}-\\sqrt{5})^8(\\sqrt{7}+\\sqrt{5})^{10}-(\\sqrt{7}-\\sqrt{5})^{10}(\\sqrt{7}+\\sqrt{5})^8
+                `}
+				/>{" "}
+				<p>を計算せよ。</p>
 				<AnswerAndExplanation
-					answer="-\frac{4}{11}"
+					answer="1024\sqrt{35}"
 					explanation={`
-            <p class="mb-2"><strong class="text-red-400 underline mr-2">ポイント！</strong>解と係数</p>
-          <img src="/2024-08-12 解説.jpeg" alt="2024-08-12 解説.jpeg" class="w-full" />
+            <p>画像が見にくかったらごめんなさい。保存したり、拡大したりしてみて見てください。</p>
+            <p class="mb-2"><strong class="text-red-400 underline mr-2">ポイント！</strong>計算をしない！　楽をする！</p>
+          <img src="/2024-08-13 解説.png" alt="2024-08-13 解説.jpeg" class="w-full" />
           `}
 				/>
 			</Template>

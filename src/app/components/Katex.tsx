@@ -4,9 +4,9 @@ import "katex/dist/katex.min.css";
 
 function Katex({ equation = "" }: { equation?: string }) {
 	return (
-		<>
+		<div className="max-w-full">
 			<BlockMath math={equation} errorColor={"#cc0000"} />
-		</>
+		</div>
 	);
 }
 
