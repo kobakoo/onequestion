@@ -44,7 +44,7 @@ function ArticleTemplate() {
 			<Template title={data.title} createdAt={data.createdAt}>
 				<Heading>{data.questionHeading}</Heading>
 				<div className="mx-5 mt-3">
-					<p dangerouslySetInnerHTML={data.question as any}></p>
+					<p dangerouslySetInnerHTML={{ __html: data.question as any }}></p>
 				</div>
 				<div className="mx-6">
 					{/*!問題内容*/}
