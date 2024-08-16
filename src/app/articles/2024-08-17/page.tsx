@@ -19,7 +19,7 @@ type ArticleData = {
 
 const data = {
 	title: "2009 筑波大学附属駒場高等学校>社会>4️⃣>2",
-	createdAt: "2024-08-18",
+	createdAt: "2024-08-17",
 	questionHeading: "2(改題)",
 	question:
 		"大恐慌（=世界恐慌）は、ニューヨークにおける「ある出来事」をきっかけにおこった。その出来事を6字以内で書き、それより後におこったことを、次のアからケまでの中からすべて選び、その記号を書きなさい。",
@@ -44,7 +44,7 @@ function ArticleTemplate() {
 		<>
 			<Template title={data.title} createdAt={data.createdAt}>
 				<p>
-					今日は1945年に皇帝溥儀が退位し満州国が消滅した日です。また、1944年の今日には第二次世界大戦・パリの解放が行われました。
+					1945年に東久邇宮稔彦王が第43代内閣総理大臣に就任し、初の皇族首班内閣である東久邇宮内閣が成立した日です。
 				</p>
 				<Heading>{data.questionHeading}</Heading>
 				<div className="mx-5 mt-3">
