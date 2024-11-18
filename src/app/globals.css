@@ -17,3 +17,7 @@
 /* .mord {
   @apply hidden;
 } */
+
+.base{
+  @apply biz-udgothic-regular hidden;
+}
