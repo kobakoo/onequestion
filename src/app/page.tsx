@@ -60,8 +60,6 @@ export default function Home() {
 						</h1>
 						<p className=" text-blue-400 text-center font-mono text-lg mt-3 transition">
 							難しい学校への第一歩
-							<br />
-							<b className=" text-red-400">期間限定！テスト範囲から出題中</b>
 						</p>
 					</div>
 					<Box sx={{ bgcolor: "background.paper", marginTop: "40px" }}>
