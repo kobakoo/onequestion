@@ -85,7 +85,7 @@ function ArticleLayout({
 							className=" text-orange-400 hover:underline transition"
 							target="_blank"
 						>
-							声の教育者
+							声の教育社
 						</Link>
 						より引用
 					</p>
