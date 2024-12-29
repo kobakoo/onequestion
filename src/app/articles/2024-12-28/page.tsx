@@ -29,9 +29,8 @@ const data = {
 	title: "2020 渋幕　1️⃣>(3)",
 	createdAt: "2024-12-26",
 	questionHeading: "(3)",
-	answer: "a=-2√2，2√2-3",
 	explanation: `
-  <img src="/2024-12-26 解説.png"></img>
+  <img src="/2024-12-28 解説.png"></img>
   `,
 } as ArticleData;
 
@@ -130,7 +129,6 @@ function ArticleTemplate() {
 						</Accordion>
 					</div>
 				</>
-
 			</Template>
 		</>
 	);
